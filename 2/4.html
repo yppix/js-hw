@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо реализовать четыре функции, каждая функция должна принимать по два
+числа и выполнять одну из операций (каждая функция выполняет одну из них):
+1. Сложение
+2. Разность
+3. Умножение
+4. Деление
+
+Необходимо сделать так, чтобы функция вернула число, например выражение
+`console.log(sum(2, 6));` должно вывести число 8 в консоль (sum - функция
+сложения в данном примере, ваши названия функций могут отличаться).
+
+Округлять значения, которые возвращают функции не нужно, однако, обратите
+внимание на разность, функция должна вычесть из большего числа меньшее, либо
+вернуть 0, если числа равны.
+
+Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать
+не нужно.
+
+Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+-->
+<script>
+    "use strict";
+
+    /**
+     * Calculating the sum of two numbers.
+     * @param {number} a - First number for sum expression.
+     * @param {number} b - Second number for sum expression.
+     */
+    function getSum(a, b) {
+        return a + b;
+    }
+
+    /**
+     * Calculating the subtraction of two numbers.
+     * @param {number} a - First number for subtraction expression.
+     * @param {number} b - Second number for subtraction expression.
+     */
+    function getSubtraction(a, b) {
+        if (a > b) {
+            return a - b;
+        } else if (b > a) {
+            return b - a;
+        } else if (a === b) {
+            return 0;
+        }
+    }
+
+    /**
+     * Calculating the multiplication of two numbers.
+     * @param {number} a - First number for multiplication expression.
+     * @param {number} b - Second number for multiplication expression.
+     */
+    function getMultiplication(a, b) {
+        return a * b;
+    }
+
+    /**
+     * Calculating the dimension of two numbers.
+     * @param {number} a - First number for dimension expression.
+     * @param {number} b - Second number for dimension expression.
+     */
+    function getDimension(a, b) {
+        return a / b;
+    }
+
+    console.log(getSum(3, 2));
+    console.log(getSum(-4, 3));
+    console.log(getSubtraction(3, 2));
+    console.log(getSubtraction(6, 8));
+    console.log(getSubtraction(5, 5));
+    console.log(getMultiplication(5, 6));
+    console.log(getMultiplication(-5, -6));
+    console.log(getMultiplication(-5, 3));
+    console.log(getDimension(3, 6));
+    console.log(getDimension(6, 3));
+    console.log(getDimension(-3, -6));
+    console.log(getDimension(-6, 6));
+
+</script>
+</body>
+</html>
