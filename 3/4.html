@@ -46,11 +46,9 @@
 
 
     const isImg = products.filter((img) => {
-        if (img.photos !== undefined && img.photos.length > 0) {
-            console.log(img)
-        }
+        return img.photos !== undefined && img.photos.length > 0
     })
-    console.log(products);
+    console.log(isImg);
 
     const priceSort = products.sort((a, b) => {
         return a.price - b.price;
