@@ -76,9 +76,9 @@
         + 'а подлость за умение жить.(c)Брюс Уилис');
     console.log(postOne);
 
-    function AttachedPostES5(author, text, highlighted = false) {
+    function AttachedPostES5(author, text) {
         PostES5.call(this, author, text);
-        this.highlighted = highlighted;
+        this.highlighted = false;
     }
 
     //Не очень понятно должно ли быть наследование edit?

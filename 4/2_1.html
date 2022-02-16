@@ -78,8 +78,9 @@
     console.log(postOne);
 
     class AttachedPostES6 extends PostES6{
-        constructor(author, text, highlighted = false) {
+        constructor(author, text) {
             super(author, text);
+            this.highlighted = false
         }
 
         makeTextHighlighted(){
