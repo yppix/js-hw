@@ -27,11 +27,11 @@
 
   ProductES5.prototype.make25Discount = function (){
     this.price = this.price - (this.price * 0.25);
-    console.log('Цена на ' + this.name + ' со скидкой будет равна ' + this.price)
   }
 
   const cheese = new ProductES5('Пармезан', 1000);
   cheese.make25Discount();
+  console.log('Цена на ' + cheese.name + ' со скидкой будет равна ' + cheese.price)
 
 
   class ProductES6{
@@ -42,12 +42,12 @@
 
     make25Discount() {
       this.price = this.price - (this.price * 0.25);
-      console.log('Цена на ' + this.name + ' со скидкой будет равна ' + this.price)
     }
   }
 
   const cake = new ProductES6('Красный бархат', 600);
   cake.make25Discount();
+  console.log('Цена на ' + cake.name + ' со скидкой будет равна ' + cake.price)
 
 </script>
 </body>

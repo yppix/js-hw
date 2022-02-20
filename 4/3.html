@@ -37,17 +37,16 @@
      * @return {Object} Object consist of units, dozens and hundreds or empty.
      */
     function getDigitsOfNumber(num) {
-
-        if (!Number.isInteger(num) || !(num >= 0 && num <1000)) {
-          console.error('There is no integer or limits error');
-          return { }
+        if (!Number.isInteger(num) || !(num >= 0 && num < 1000)) {
+            console.error('There is no integer or limits error');
+            return {};
         }
 
         return {
-          units:num%10,
-          dozens:Math.floor(num/10)%10,
-          hundreds:Math.floor(num/100),
-        }
+            units: num % 10,
+            dozens: Math.floor(num / 10) % 10,
+            hundreds: Math.floor(num / 100),
+        };
     }
 
     console.log(getDigitsOfNumber(987));
