@@ -36,7 +36,7 @@
 
     const dropList = document.querySelectorAll('.dropdown-item');
     dropList.forEach(el => {
-        el.classList.add('super-dropdown')
+        el.classList.add('super-dropdown');
     })
 
     /*
@@ -105,8 +105,8 @@
     Атрибут "class" содержит значение "btn btn-secondary dropdown-toggle"
      */
 
-    let btnsDrpDwn = document.getElementsByClassName('btn dropdown-toggle');
-    let mas = [];
+    const btnsDrpDwn = document.getElementsByClassName('btn dropdown-toggle');
+    const mas = [];
     for (let i = 0; i < btnsDrpDwn.length; i++) {
 
         let attributes = btnsDrpDwn[i].attributes;
