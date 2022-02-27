@@ -106,7 +106,6 @@
 
     formToSend.addEventListener('submit', event => {
         for (let i = 0; i < formElements.length; i++) {
-
             if (formElements[i].tagName === 'BUTTON') {
                 return;
             }
@@ -121,13 +120,13 @@
             }
             event.preventDefault();
         }
-    })
+    });
 
     formToSend.addEventListener('input', event => {
         event.target.value === '' ?
             event.target.classList.add('error') :
             event.target.classList.remove('error');
-    })
+    });
 
 </script>
 </body>
