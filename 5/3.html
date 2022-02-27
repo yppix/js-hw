@@ -89,7 +89,7 @@
 
     document.body.addEventListener('click', event => {
         const isClass = event.target.classList.contains('super_element');
-        let availability = isClass ? 'присутствует' : 'отсутствует';
+        const availability = isClass ? 'присутствует' : 'отсутствует';
         console.log(`Класс "super_element" ${availability} в элементе`
             + ` ${(event.target.tagName).toLowerCase()}.`);
     })
@@ -140,7 +140,7 @@
 
     const liElements = document.querySelectorAll('li:nth-child(2n)');
     liElements.forEach(el => {
-      el.style.backgroundColor = 'yellow';
+        el.style.backgroundColor = 'yellow';
     });
 
 </script>

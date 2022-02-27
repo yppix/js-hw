@@ -44,7 +44,7 @@
      */
 
     const links = document.getElementsByClassName('card-link');
-    for (let i = 0; i <= links.length - 1; i++) {
+    for (let i = 0; i < links.length; i++) {
         links.item(i).textContent = 'Ссылка';
     }
 
@@ -53,7 +53,7 @@
     элементе с классом "card-body" и вывести полученную коллекцию в консоль.
      */
 
-    console.log(document.querySelector('.card-body').getElementsByClassName('card-link'));
+    console.log(document.querySelector('.card-body .card-link');
 
     /*
     4. Найти первый попавшийся элемент на странице у которого есть атрибут
