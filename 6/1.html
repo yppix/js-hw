@@ -59,7 +59,6 @@
      */
 
     document.body.addEventListener('click', event => {
-        console.log(event);
         if (event.target.tagName === 'BUTTON') {
             event.target.textContent = 'Добавлено';
             event.target.disabled = true;

@@ -115,8 +115,8 @@
         mas[i] = [];
 
         for (let j = 0; j < attributes.length; j++) {
-            let className = attributes.item(j).name;
-            let classNameValue = attributes.item(j).value;
+            const className = attributes.item(j).name;
+            const classNameValue = attributes.item(j).value;
             mas[i][j] = `Атрибут ${className} содержит значение ${classNameValue}`;
         }
     }
