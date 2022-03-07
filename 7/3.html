@@ -27,7 +27,7 @@
     function descendingOrder(n) {
         const arrN = Array.from(String(n), Number);
         arrN.sort((a, b) => b - a);
-        return arrN;
+        return +arrN.join('');
     }
 
     console.log(descendingOrder(42145)); // 54421
